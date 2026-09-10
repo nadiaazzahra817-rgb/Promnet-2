@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Personal Website</title>
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="project.html">Project</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+
+    <h2>Informasi Kontak</h2>
+    <p>
+        Jikalau Anda ingin berdiskusi, bekerja sama, ataupun ingin menyapa, silakan menghubungi saya lewat email ke
+        <a href="mailto:nadiaazzahra817@student.upi.edu">nadiaazzahra817@student.upi.edu</a>.
+    </p>
+
+    <h2>Form Pesan</h2>
+    <form action="" method="post">
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <th colspan="2">Hubungi Saya</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="nama">Nama Lengkap</label></td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="nama@email.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telepon">Nomor Telepon</label></td>
+                    <td><input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" id="jk_l" name="jenis_kelamin" value="Laki-laki">
+                        <label for="jk_l">Laki-laki</label>
+                        <input type="radio" id="jk_p" name="jenis_kelamin" value="Perempuan">
+                        <label for="jk_p">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+                    <td><input type="date" id="tgl_lahir" name="tgl_lahir"></td>
+                </tr>
+                <tr>
+                    <td><label for="topik">Topik Pesan</label></td>
+                    <td>
+                        <select id="topik" name="topik">
+                            <option value="Diskusi Project">Diskusi Project</option>
+                            <option value="Kerja Sama">Kerja Sama</option>
+                            <option value="Tanya Jawab">Tanya Jawab</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Pesan</td>
+                    <td>
+                        <input type="checkbox" id="jp1" name="jenis_pesan[]" value="Pertanyaan">
+                        <label for="jp1">Pertanyaan</label>
+                        <input type="checkbox" id="jp2" name="jenis_pesan[]" value="Saran">
+                        <label for="jp2">Saran</label>
+                        <input type="checkbox" id="jp3" name="jenis_pesan[]" value="Tawaran">
+                        <label for="jp3">Tawaran</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pesan">Pesan</label></td>
+                    <td><textarea id="pesan" name="pesan" rows="5" cols="30"
+                            placeholder="Tuliskan pesan Anda di sini..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>Konfirmasi</td>
+                    <td>
+                        <input type="checkbox" id="salinan" name="salinan" value="Ya">
+                        <label for="salinan">Kirimkan salinan pesan ini ke email saya</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Kirim Pesan">
+                        <input type="reset" value="Batal">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <hr>
+    <p>&copy; 2026 Nadia Az-Zahra.</p>
+</body>
+
+</html>
